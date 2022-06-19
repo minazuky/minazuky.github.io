@@ -218,15 +218,7 @@ form.addEventListener('submit', e => {
   <input name="apellidos" type="text" placeholder="Apellidos" required>
   <input name="email" type="email" placeholder="Email" required>
   <button type="submit">Enviar</button>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbyX8meGDwIvNF0dptDHCSeB3JeduT8oJcUMDlDsmZxTBJJ3NCzZSP0Izi-JDSVH4Hbp/exec'
-const form = document.forms['submit-form']
-
-form.addEventListener('submit', e => {
-  e.preventDefault()
-  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-    .then(response => console.log('Success!', response))
-    .catch(error => console.error('Error!', error.message))
-})
+        
 </form>
 </body>
 </html>
